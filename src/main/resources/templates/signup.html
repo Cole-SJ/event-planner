@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Title of the HTML document -->
+    <title>Sign Up</title>
+</head>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Main title of the page -->
+        <h1 class="title">Sign Up</h1>
+
+        <!-- Form for user sign-up -->
+        <form id="signup-form">
+            <!-- Input field for the email -->
+            <label for="newEmail">Email:</label>
+            <input type="email" id="newEmail" name="newEmail" required>
+            
+            <!-- Input field for the new username -->
+            <label for="newUsername">New Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+          
+            <!-- Input field for the new password -->
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <!-- Button to trigger the sign-up action -->
+            <button type="button" onclick="submitSignUp()">Sign Up</button>
+        </form>
+
+        <!-- Button to navigate back to login.html -->
+        <button onclick="window.location.href='login.html'">Back to Login</button>
+    </div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include your custom script for handling sign-up actions -->
+    <script src="script.js"></script>
+</body>
+</html>

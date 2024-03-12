@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+        useLocalSessionState: true
+        rewriteBatchedStatements: true
+        cacheResultSetMetadata: true
+        cacheServerConfiguration: true
+        elideSetAutoCommits: true
+        maintainTimeStats: false
+      connection-timeout: 20000
+      validation-timeout: 1000
+      maximum-pool-size: 10
+      minimum-idle: 10
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/event_planner?characterEncoding=UTF-8&serverTimezone=UTC
+      username: root
+      password: root
+  jpa:
+    properties:
+      hibernate:
+        show-sql: true
+        format-sql: true
+        use_sql_comments: true
+    hibernate:
+      ddl-auto: update
+

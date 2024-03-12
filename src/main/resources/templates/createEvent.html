@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external stylesheets for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!-- Include Google Maps API script with a valid API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1B-S9Uw6CXcJ6pAMhNT073uUet5UTK4s&libraries=places"></script>
+
+    <!-- Title of the HTML document -->
+    <title>Create Event</title>
+</head>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Main title of the page -->
+        <h1 class="title">Create Event</h1>
+
+        <!-- Flex container for layout -->
+        <div class="flex-container">
+            <!-- Calendar container with a modern style -->
+            <div id="calendar" class="modern-calendar"></div>
+
+            <!-- Container for the event creation form -->
+            <div id="event-form-container">
+                <!-- Form for creating events -->
+                <form id="event-form">
+                    <!-- Input field for the event name -->
+                    <label for="eventName">Name of Event:</label>
+                    <input type="text" id="eventName" name="eventName" required><br>
+
+                    <!-- Input field for the event location -->
+                    <label for="eventLocation">Location:</label>
+                    <input type="text" id="eventLocation" name="eventLocation" required>
+                    
+                    <!-- Container for displaying the map -->
+                    <div id="map"></div><br>
+
+                    <!-- Textarea for the event description -->
+                    <label for="eventDescription">Description:</label>
+                    <textarea id="eventDescription" name="eventDescription" required></textarea><br>
+
+                    <!-- Submit button to submit the form -->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+        <!-- Button to navigate back to index.html -->
+        <button onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <!-- Include jQuery and jQuery UI scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Include your custom script for handling events -->
+    <script src="script.js"></script>
+</body>
+</html>

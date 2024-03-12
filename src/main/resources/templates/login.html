@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external stylesheet for styling -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Title of the HTML document -->
+    <title>Login Page</title>
+</head>
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        <!-- Main title of the page -->
+        <h1 class="title">Login</h1>
+
+        <!-- Form for user login -->
+        <form id="login-form">
+            <!-- Input field for the username -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Input field for the password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Button to submit the login form -->
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Options section with links for sign-up and forgot password -->
+        <div class="options">
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+            <span class="separator">|</span> <!-- Separator between links -->
+            <button onclick="window.location.href='forgotpassword.html'">Forgotten Password?</button>
+        </div>
+    </div> 
+
+    <!-- Include your custom script for handling login actions -->
+    <script src="script.js"></script>
+</body>
+</html>
