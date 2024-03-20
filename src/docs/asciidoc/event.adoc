@@ -1,0 +1,116 @@
+[[event]]
+== Event Domain APIs(Event)
+APIs for Event Domain in EventPlanner Application
+
+=== Event Domain(`Event`)
+They are basic CRUD operations API for `Event` domain
+
+==== Event Create API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-post-event/curl-request.adoc[]
+include::{snippets}/api-post-event/http-request.adoc[]
+include::{snippets}/api-post-event/request-headers.adoc[]
+include::{snippets}/api-post-event/request-fields.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-post-event/http-response.adoc[]
+include::{snippets}/api-post-event/response-fields.adoc[]
+
+==== Event Update API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-put-event/curl-request.adoc[]
+include::{snippets}/api-put-event/http-request.adoc[]
+include::{snippets}/api-put-event/request-headers.adoc[]
+include::{snippets}/api-put-event/request-fields.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-put-event/http-response.adoc[]
+include::{snippets}/api-put-event/response-fields.adoc[]
+
+==== Event Delete API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-deleted-event/curl-request.adoc[]
+include::{snippets}/api-deleted-event/http-request.adoc[]
+include::{snippets}/api-deleted-event/request-headers.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-deleted-event/http-response.adoc[]
+include::{snippets}/api-deleted-event/response-fields.adoc[]
+
+
+==== Event Cancel API
+
+* cancel reservation for specific event
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-post-cancel-event/curl-request.adoc[]
+include::{snippets}/api-post-cancel-event/http-request.adoc[]
+include::{snippets}/api-post-cancel-event/request-headers.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-post-cancel-event/http-response.adoc[]
+include::{snippets}/api-post-cancel-event/response-fields.adoc[]
+
+==== Event Register API
+
+* make reservation for specific event
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-post-register-event/curl-request.adoc[]
+include::{snippets}/api-post-register-event/http-request.adoc[]
+include::{snippets}/api-post-register-event/request-headers.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-post-register-event/http-response.adoc[]
+include::{snippets}/api-post-register-event/response-fields.adoc[]
+
+
+==== Search Events API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-search-event/curl-request.adoc[]
+include::{snippets}/api-get-search-event/query-parameters.adoc[]
+include::{snippets}/api-get-search-event/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-search-event/http-response.adoc[]
+include::{snippets}/api-get-search-event/response-fields.adoc[]
+
+==== Get Event Detail API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-event-detail/curl-request.adoc[]
+include::{snippets}/api-get-event-detail/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-event-detail/http-response.adoc[]
+include::{snippets}/api-get-event-detail/response-fields.adoc[]
+
+==== Get My  Events API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-my-events/curl-request.adoc[]
+include::{snippets}/api-get-my-events/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-my-events/http-response.adoc[]
+include::{snippets}/api-get-my-events/response-fields.adoc[]

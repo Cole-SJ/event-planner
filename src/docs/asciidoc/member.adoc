@@ -1,0 +1,98 @@
+[[member]]
+== Member Domain APIs(Member)
+APIs for Member Domain in EventPlanner Application
+
+=== Member Domain(`Member`)
+They are basic CRUD operations API for `Member` domain
+
+==== Member Sign Up API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-post-signup/curl-request.adoc[]
+include::{snippets}/api-post-signup/http-request.adoc[]
+include::{snippets}/api-post-signup/request-fields.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-post-signup/http-response.adoc[]
+include::{snippets}/api-post-signup/response-fields.adoc[]
+
+==== Member Login API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-post-login/curl-request.adoc[]
+include::{snippets}/api-post-login/http-request.adoc[]
+include::{snippets}/api-post-login/request-fields.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-post-login/http-response.adoc[]
+include::{snippets}/api-post-login/response-fields.adoc[]
+
+==== Member Logout API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-post-logout/curl-request.adoc[]
+include::{snippets}/api-post-logout/request-headers.adoc[]
+include::{snippets}/api-post-logout/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-post-logout/http-response.adoc[]
+
+==== Get My Detail API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-my-detail/curl-request.adoc[]
+include::{snippets}/api-get-my-detail/request-headers.adoc[]
+include::{snippets}/api-get-my-detail/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-my-detail/http-response.adoc[]
+include::{snippets}/api-get-my-detail/response-fields.adoc[]
+
+==== Get Login Email API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-login-email/curl-request.adoc[]
+include::{snippets}/api-get-login-email/query-parameters.adoc[]
+include::{snippets}/api-get-login-email/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-login-email/http-response.adoc[]
+include::{snippets}/api-get-login-email/response-fields.adoc[]
+
+
+==== Get Login Password API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-login-password/curl-request.adoc[]
+include::{snippets}/api-get-login-password/query-parameters.adoc[]
+include::{snippets}/api-get-login-password/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-login-password/http-response.adoc[]
+include::{snippets}/api-get-login-password/response-fields.adoc[]
+
+==== Get Other Member Detail API
+
+[discrete]
+===== REQUEST
+include::{snippets}/api-get-other-member-details/curl-request.adoc[]
+include::{snippets}/api-get-my-detail/request-headers.adoc[]
+include::{snippets}/api-get-other-member-details/query-parameters.adoc[]
+include::{snippets}/api-get-other-member-details/http-request.adoc[]
+
+[discrete]
+===== RESPONSE
+include::{snippets}/api-get-other-member-details/http-response.adoc[]
+include::{snippets}/api-get-other-member-details/response-fields.adoc[]

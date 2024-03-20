@@ -1,0 +1,31 @@
+= Event Planner API
+[junseo Uh],
+v0.0.1, 2024.03.18
+
+:doctype: book
+:icons: font
+:source-highlighter: coderay
+:toc: left
+:toc-title: contents
+:toclevels: 3
+:sectlinks:
+:sectnums:
+
+== Intro
+
+It's about EventPlanner application Server APIs
+
+.Author
+|====
+|role |name |
+|Backend |junseo Uh |
+
+|====
+
+***
+
+//Member
+include::member.adoc[]
+
+//Member
+include::event.adoc[]

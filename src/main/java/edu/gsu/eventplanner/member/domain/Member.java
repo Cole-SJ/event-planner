@@ -70,7 +70,7 @@ public class Member {
     }
 
     public void login() {
-        String accessToken = UUID.randomUUID().toString();
+        var accessToken = UUID.randomUUID().toString();
         this.accessToken = accessToken;
         this.lastLoginAt = LocalDateTime.now();
     }

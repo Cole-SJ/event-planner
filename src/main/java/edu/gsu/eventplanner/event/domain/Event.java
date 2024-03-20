@@ -69,20 +69,24 @@ public class Event {
                             String eventContents,
                             Set<Long> participants) {
 
-        this.eventName= eventName;
+        this.eventName = eventName;
         this.eventLocation = eventLocation;
         this.eventHeldAt = eventHeldAt;
         this.maxJoinCount = maxJoinCount;
-        this.eventContents =eventContents;
+        this.eventContents = eventContents;
         this.participants = participants;
     }
 
-    public void cancelEvent(Long myId){
-       this.participants.remove(myId);
+    public void cancelEvent(Long myId) {
+        this.participants.remove(myId);
     }
 
-    public void registerEvent(Long myId){
+    public void registerEvent(Long myId) {
         this.participants.add(myId);
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
 }
